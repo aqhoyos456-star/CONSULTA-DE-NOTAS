@@ -68,7 +68,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Consulta Pública de Notas</h1>
+    <h1>Consulta de Notas</h1>
 
     <input type="text" id="dni" placeholder="Ingrese su DNI (8 dígitos)" maxlength="8" />
     <button onclick="consultar()">Consultar</button>
@@ -331,9 +331,8 @@
       resultado.innerHTML = `
         <table>
           <tr><th>Participante</th><td>${persona.nombre}</td></tr>
-          <tr><th>Curso</th><td>${persona.curso}</td></tr>
-          <tr><th>Nota</th><td>${persona.nota}</td></tr>
-          <tr><th>Promedio</th><td>${persona.promedio}</td></tr>
+          <tr><th>Curso</th><td>${persona.Curso}</td></tr>
+          <tr><th>Nota</th><td>${persona.Examen Final}</td></tr>
         </table>
       `;
     }
